@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    grid-template-rows: 60% 40%;
+    height: 100%;
+   
+}
+
+#sidebar {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end:2;
+    overflow: scroll;
+}
+
+#hideBtnSidebar {
+    width: 50px;
+    height: 50px;
+    background: gray;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 99;
+}
+
+#hideBtnInfo {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 99;
+}
+
+#viewer {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+}
+
+#info {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 24px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 0.8em;
+}
+
+#details {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    padding: 24px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 0.8em;
+}
+
+#sidebar img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+#sidebar img:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: 0.05s ease-in;
+}
+
+a {
+    text-decoration: underline !important;
+}
